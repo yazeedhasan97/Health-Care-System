@@ -1,6 +1,7 @@
 import functools
 import random
 import string
+import functools
 
 
 def centerWindow(window):
@@ -35,5 +36,19 @@ def random_alphaNumeric_password(lettersCount, digitsCount):
     finalString = ''.join(sampleList)
     return finalString
 
+
+def timer(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        import time
+        start = time.time()
+        x = func(*args, **kwargs)
+        end = time.time()
+        print(f'{func.__name__} Took {end - start} Time to excute')
+        return x
+
+    return wrapper
+
+
 if __name__ == '__main__':
-    print(random_alphaNumeric_password(10,5))
+    print(random_alphaNumeric_password(10, 5))
