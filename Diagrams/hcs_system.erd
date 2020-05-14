@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="hcs_system.erd">
+	<entities>
+		<data-source id="postgres-jdbc-17179bc8f74-53c1927c56ffc2d">
+			<entity id="1" name="doctor_session" fq-name="private.doctor_session" order="0" x="480" y="20">
+				<path name="private"/>
+				<path name="HCS"/>
+			</entity>
+			<entity id="2" name="doctors" fq-name="private.doctors" order="1" x="27" y="52">
+				<path name="private"/>
+				<path name="HCS"/>
+			</entity>
+			<entity id="3" name="nur_to_pat" fq-name="private.nur_to_pat" order="2" x="281" y="30">
+				<path name="private"/>
+				<path name="HCS"/>
+			</entity>
+			<entity id="4" name="patiant" fq-name="private.patiant" order="3" x="341" y="245">
+				<path name="private"/>
+				<path name="HCS"/>
+			</entity>
+			<entity id="5" name="users" fq-name="private.users" order="4" x="20" y="200">
+				<path name="private"/>
+				<path name="HCS"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations/>
+</diagram>
